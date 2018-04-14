@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> No Waste </title>
+  </head>
+  <body>
+    <h1> No Waste </h1>
+    <h3> No Waste is a platform for linking shelters with food insecure families.</h3>
+    <form action="{{url_for('submit_food_entry')}}">
+      <button type="submit" value="Submit New Food Listing" method="post"> I have food </button>
+      <button type="submit" value="See food listings" formaction = "{{url_for('food_listings')}}"> I need food </button>
+    </form>
+  </body>
+</html>
